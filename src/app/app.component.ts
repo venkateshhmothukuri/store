@@ -11,4 +11,17 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'supermarket';
+  cartItems =[];
+
+  addToCart(item: any){
+
+    this.cartItems.push(item);
+  }
+
+getTotal(){
+
+  return this.cartItems.reduce((acc, item) => acc + item.price, 0);
+}
+
+
 }

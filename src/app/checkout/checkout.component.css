@@ -1,0 +1,22 @@
+h2{
+
+
+    color: #4caf50;
+
+}
+
+p{
+
+    font-weight: bold;
+}
+
+button{
+
+background-color: #4caf50;
+color: white;
+border: none;
+padding: 10px 20px;
+cursor: pointer;
+
+
+}

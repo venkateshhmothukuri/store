@@ -1,0 +1,17 @@
+<h2>Item List</h2>
+
+
+<ul>
+
+<li *ngFor="let item of items">
+
+{{item.name}} -${{ item.price}}
+
+<button  (click)="addToCart(item)">Add to Cart</button>
+
+</li>
+
+
+
+
+</ul>
