@@ -18,9 +18,11 @@ items = [
 ];
 
 
+constructor(private store: store){}
+
 addToCart(_item: any){
 
-  
+  this.store.dispatch(this.addToCart({_item}))
 }
 
 }

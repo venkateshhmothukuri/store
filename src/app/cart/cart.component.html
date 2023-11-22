@@ -2,7 +2,7 @@
 
 <ul>
 
-<li *ngFor="let item of cartItems">
+<li *ngFor="let item of cartItems$ | async">
 
 {{item.name}} - ${{item.price}}
 
@@ -11,4 +11,6 @@
 
 </ul>
 
-<p>Total: ${{  getTotal()}}</p>
+<p>Total: ${{ total$ | async}}</p>
+
+<button  (click)="clearCart()">Clear Cart</button>
